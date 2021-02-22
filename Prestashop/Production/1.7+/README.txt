@@ -1,0 +1,1 @@
+Upload this zip file into your system. Go to our documentation pages at https://www.qlicknpay.com/docs for more info.

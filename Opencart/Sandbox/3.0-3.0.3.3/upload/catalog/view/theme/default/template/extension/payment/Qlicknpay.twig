@@ -1,0 +1,30 @@
+<form action="{{ Qlicknpay_url}}" method="post">
+
+    {% for i in 1..counter %}
+
+
+    <input type="hidden" name="Qlicknpay_product_name{{ i }}" value="{{Qlicknpay_product_name[i]}}" />
+    <input type="hidden" name="Qlicknpay_product_price{{ i }}" value="{{ Qlicknpay_product_price[i]}}" />
+    <input type="hidden" name="Qlicknpay_product_quantity{{ i }}" value="{{ Qlicknpay_product_quantity[i]}}" />
+    <input type="hidden" name="Qlicknpay_product_img{{ i }}" value="{{ Qlicknpay_product_img[i]}}" />
+    {% endfor %}
+      <input type="hidden" name="address_1" value="{{ Qlicknpay_address_1}}" />
+      <input type="hidden" name="address_2" value="{{ Qlicknpay_address_2}}" />
+      <input type="hidden" name="city" value="{{ Qlicknpay_city}}" />
+      <input type="hidden" name="zip" value="{{ Qlicknpay_zip}}" />
+      <input type="hidden" name="country" value="{{ Qlicknpay_country}}" />
+      <input type="hidden" name="detail" value="{{ Qlicknpay_detail}}" />
+      <input type="hidden" name="amount" value="{{ Qlicknpay_amount}}" />
+      <input type="hidden" name="order_id" value="{{ Qlicknpay_order_id}}" />
+      <input type="hidden" name="hash" value="{{ Qlicknpay_hash}}" />
+      <input type="hidden" name="name" value="{{ Qlicknpay_customer_name}}" />
+      <input type="hidden" name="email" value="{{ Qlicknpay_email}}" />
+      <input type="hidden" name="phone" value="{{ Qlicknpay_phone}}" />
+      <input type="hidden" name="merchant_id" value="{{ payment_Qlicknpay_merchant_id}}" />
+
+  <div class="buttons">
+    <div class="pull-right">
+      <input type="submit" value="{{ button_confirm}}" class="btn btn-primary" />
+    </div>
+  </div>
+</form>

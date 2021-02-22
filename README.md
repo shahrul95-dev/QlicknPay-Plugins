@@ -1,0 +1,2 @@
+# QlicknPay_Plugins
+ 
